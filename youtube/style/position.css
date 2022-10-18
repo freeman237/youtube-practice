@@ -1,0 +1,30 @@
+.time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 8px;
+    right: 5px;
+    font-family: roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+} 
+.notification-container{
+    position: relative;
+    cursor: pointer;
+}
+.notification-count{
+    color: white;
+    font-family: roboto, arial;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: rgb(201, 0, 0);
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 8px;
+}

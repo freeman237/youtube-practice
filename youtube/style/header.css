@@ -1,0 +1,148 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom-color: rgb(200, 200, 200);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    z-index: 100;
+}
+.left{
+    width: 180px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+.hamburger{
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.logo{
+    height: 20px;
+    cursor: pointer;
+}
+.middle{
+    margin-left: 70px;
+    margin-right: 40px;
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    
+}
+.search::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.search{
+    height: 40px;
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, .05);
+    border-width: 1px;
+    border-color: rgb(202, 202, 202);
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 2px;
+    flex: 1;
+    width: 0px;
+}
+.search-icon{
+    height: 23px;
+    margin-top: 3px;
+}
+.search-button{
+    background-color: rgb(245, 245, 245);
+    border-width: 1px;
+    height: 40px;
+    border-color: rgb(202, 202, 202);
+    border-style: solid;
+    width: 60px;
+    border-radius: 2px;
+    margin-left: -1px;
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.tooltip{
+    position: absolute;
+    bottom: -40px;
+    background-color: gray;
+    font-family: roboto, arial;
+    font-size: 12px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity .15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.notification-container:hover .tooltip
+{
+    opacity: 1;
+}
+.apps-container:hover .tooltip,
+.upload-container:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 8px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.voice-icon{
+    height: 24px;
+    margin-top: 7px;
+}
+.right{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+.upload{
+    height: 24px;
+}
+.apps{
+    height: 24px;
+}
+.notifications{
+    height: 24px;
+}
+.my-channel{
+    height: 30px;
+    cursor: pointer;
+}
+.apps-container,
+.upload-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
